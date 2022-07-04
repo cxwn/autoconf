@@ -26,21 +26,21 @@ func ConfOASR(privateKey string, publicKey string) {
 
 	inis := []curd.Config{
 		{
-			Name:           "/apache-tomcat-8.5.5/webapps/WEB-INF/classes/redis.properties",
+			Name:           "/apache-tomcat-8.5.81/webapps/WEB-INF/classes/redis.properties",
 			Comment:        "#",
 			Prefix:         "JTR_",
 			Connection:     ".",
 			EqualitySigned: "=",
 		},
 		{
-			Name:           "/apache-tomcat-8.5.5/webapps/WEB-INF/classes/jdbc.properties",
+			Name:           "/apache-tomcat-8.5.81/webapps/WEB-INF/classes/jdbc.properties",
 			Comment:        "#",
 			Prefix:         "JTJ_",
 			Connection:     "",
 			EqualitySigned: "=",
 		},
 		{
-			Name:           "/apache-tomcat-8.5.5/webapps/WEB-INF/classes/log4j.properties",
+			Name:           "/apache-tomcat-8.5.81/webapps/WEB-INF/classes/log4j.properties",
 			Comment:        "#",
 			Prefix:         "JTL_",
 			Connection:     ".",
@@ -70,7 +70,7 @@ func ConfOASR(privateKey string, publicKey string) {
 		{
 			Name:           "/TBNR_release_time/bin/Decode.cfg",
 			Comment:        "#",
-			Prefix:         "TRT",
+			Prefix:         "TRT_",
 			Connection:     "",
 			EqualitySigned: "=",
 		},

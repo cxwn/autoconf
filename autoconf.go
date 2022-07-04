@@ -9,7 +9,7 @@ import (
 	_"os"
 )
 
-// 256 位的公钥长度，可加密包含数字、字母、符号的最长21位的密码，尝过该长度程序会报错，一般情况下256位加密即可满足要求，加密位数过高会导致效率低下。
+// 384 位的公钥长度，可加密包含数字、字母、符号的最长21位的密码，尝过该长度程序会报错，一般情况下256位加密即可满足要求，加密位数过高会导致效率低下。
 var privateKey string = `-----BEGIN RSA PRIVATE KEY-----
 MIHxAgEAAjEAw+3qUW6PYKDuF478HYzC7fV0at5NRSjHoLKEPqPNiBlg3QxV42bk
 crVu+qZWJfORAgMBAAECMGuWMivjDQIffH4dOt2zFLr8JKAmT8HhQL8PW4Nw4dS6
@@ -24,7 +24,7 @@ var publicKey string = cmrsa.GetPublicKeyFromPrivateKey(privateKey)
 func main() {
 
 	/*===================
-	encryptText, _ := cmrsa.PublicKeyEncrypt(`AVshQ()P5K}ta$gF`, publicKey)
+	encryptText, _ := cmrsa.PublicKeyEncrypt(`{bPAMgE$}j0Z8QFz`, publicKey)
 	fmt.Print(encryptText)
 	decryptText, _ := cmrsa.PrivateKeyDecrypt(encryptText, privateKey)
 	print("\n")
